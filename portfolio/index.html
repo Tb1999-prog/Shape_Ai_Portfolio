@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main class='main'>
+        <nav class='navBar'>
+            <h1>Tushar Batra Portfolio</h1>
+            <div class='navigationMenu'>
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect!</a>
+                <div>
+        </nav>
+        <section class='heroSection'>
+            <img class='profileImage' src='./images/self.jpg'>
+            <div class='herosectionDetails'>
+                <h1>Tushar Batra</h1>
+                <h3>Student at SKIT</h3>
+            </div>
+        </section>
+        <section class='aboutMe' id='aboutMe'>
+            <h1>What I Do...</h1>
+            <p>I am pursing my B.Tech from SKIT college which comes under the RTU,Kota . I am currently in third semester in CSE branch. I have completed my first semester with 8.77 and second semester with 9.43 SGPA In this time I learn about C ,C++, Python,Html,css,javascript
+                and Latex .I know software like Visual Paradigim, DB browser . I can speak English and Hindi</p>
+        </section>
+        <section class='skillsAndProjects'>
+            <div class='skills' id='skills'>
+                <h1 class='cardHeading'>Skills</h1>
+                <img title='HTML' src='./images/html.svg'>
+                <img title='CSS' src='./images/css.svg'>
+                <img title='Javascript' src='./images/javascript.svg'>
+                <img title='Node.JS' src='./images/node.svg'>
+                <img title='React' src='./images/react.svg'>
+                <img title='SQL' src='./images/sql.svg'>
+                <img title='Python' src='./images/python.svg'>
+            </div>
+            <div class='projects' id='projects'>
+                <h1 class='cardHeading'>Projects</h1>
+                <div class='projectContainer'>
+                    <img src='./images/virtual_assisstant.webp'>
+                    <div class='projectDescription'>
+                        <h4>Virtual Assisstant</h4>
+                        <p>It is prohect mae in python it do works by gettting commands by user. User give command by speaking</p>
+                    </div>
+                </div>
+                <div class='projectContainer'>
+                    <img src='images/rock_paper_s.jfif'>
+                    <div class='projectDescription'>
+                        <h4>Rock Paper Scissor</h4>
+                        <p>It is game of Rock Paper Scissor which everyone played in childhood with friends but you can play it with computer it is written in python code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='contactForm' id='contactForm'>
+            <h1>Let's Connect!</h2>
+                <div class='formGroup'>
+                    <label for='name'>Enter Full Name</label><br/>
+                    <input type='text' id='name' placeholder='Full Name' />
+                </div>
+                <div class='formGroup'>
+                    <label for='email'>Email</label><br/>
+                    <input type='text' id='email' placeholder='Email' />
+                </div>
+                <div class='formGroup'>
+                    <label for='message'>Message</label><br/>
+                    <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+                </div>
+                <button class='submitButton' onClick={submit()}>Connect</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
